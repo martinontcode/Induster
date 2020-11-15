@@ -1,0 +1,89 @@
+/* Component level changes */
+.form-control {
+    -webkit-border-radius: 10rem;
+       -moz-border-radius: 10rem;
+            border-radius: 10rem;
+}
+.supplier-custom-font {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #00101170;
+}
+.supplier-custom-link-font {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #00101170;
+    text-decoration: none;
+}
+.supplier-custom-link-font:hover {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #3f51b5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Supplier search */
+.supplier-search-wrapper {
+    background-color: white;
+}
+.search-btn-outline-custom {
+    color: #3f51b59f;
+    border-color: #3f51b59f;
+    -webkit-border-radius: 10rem;
+       -moz-border-radius: 10rem;
+            border-radius: 10rem;
+}
+.search-btn-outline-custom:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+}
+.search-badge-custom {
+    font-weight: 600;
+    font-size: 0.625em;
+    background-color: #FFBF00;
+    color: #fff;
+    line-height: 2;
+}
+
+
+/* Supplier information */
+.supplier-header-font {
+    font-weight: 600;
+    font-size: 1.125em;
+}
+.supplier-badge-custom {
+    font-weight: 600;
+    font-size: 0.625em;
+    background-color: #EF5D60;
+    color: #fff;
+    line-height: 2;
+}
+.supplier-description-font {
+    font-weight: 400;
+    font-size: 0.5625em;
+    color: #00101175;
+}
+.supplier-categories-header-font {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #00101160;
+}
+
+/* Supplier categories information */
+.category-badge-custom {
+    font-weight: 600;
+    font-size: 0.625em;
+    background-color: #93e2ff;
+    color: #fff;
+    line-height: 2;
+}
+.category-badge-custom:hover {
+    font-weight: 600;
+    font-size: 0.625em;
+    background-color: #60c9f0;
+    color: #fff;
+    line-height: 2;
+    transition: 0.3s;
+}
