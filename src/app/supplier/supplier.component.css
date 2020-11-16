@@ -7,12 +7,12 @@
 .supplier-custom-font {
     font-weight: 400;
     font-size: 0.875em;
-    color: #00101170;
+    color: #0010119f;
 }
 .supplier-custom-link-font {
     font-weight: 400;
     font-size: 0.875em;
-    color: #00101170;
+    color: #001011a2;
     text-decoration: none;
 }
 .supplier-custom-link-font:hover {
@@ -42,7 +42,14 @@
 .search-badge-custom {
     font-weight: 600;
     font-size: 0.625em;
-    background-color: #FFBF00;
+    background-color: #3185FC;
+    color: #fff;
+    line-height: 2;
+}
+.search-badge-custom:hover {
+    font-weight: 600;
+    font-size: 0.625em;
+    background-color: #296fd1;
     color: #fff;
     line-height: 2;
 }
@@ -56,9 +63,9 @@
 .supplier-badge-custom {
     font-weight: 600;
     font-size: 0.625em;
-    background-color: #EF5D60;
+    background-color: #E71D36;
     color: #fff;
-    line-height: 2;
+    line-height: 1.6;
 }
 .supplier-description-font {
     font-weight: 400;
@@ -75,14 +82,14 @@
 .category-badge-custom {
     font-weight: 600;
     font-size: 0.625em;
-    background-color: #93e2ff;
+    background-color: #3185FC;
     color: #fff;
     line-height: 2;
 }
 .category-badge-custom:hover {
     font-weight: 600;
     font-size: 0.625em;
-    background-color: #60c9f0;
+    background-color: #296fd1;
     color: #fff;
     line-height: 2;
     transition: 0.3s;
