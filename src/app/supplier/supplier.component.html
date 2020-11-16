@@ -48,21 +48,19 @@
         </div>
         <hr>
     </div>
-    <ul class="list-group mt-3 mb-3">
-        <li class="row border-bottom">
+    <ul class="list-group mt-0 mb-3">
+        <li class="row border-bottom mb-2" *ngFor="let supplier of supplierList">
             <div class="col-12 col-sm-6">
                 <div class="row">
-                    <div class="col-12 col-sm-3 supplier-header-font">
-                        Techine
+                    <div class="col-12 col-sm-4 col-md-3 supplier-header-font">
+                        {{supplier.supplierName}}
                     </div>
-                    <div class="col-12 col-sm-9 mb-3 mb-sm-2">
+                    <div class="col-12 col-sm-8 mb-3 mb-sm-2">
                         <span class="badge badge-pill supplier-badge-custom mr-1">Recommended</span>
-                        <span class="badge badge-pill badge-primary supplier-badge-custom mr-1">Primary</span>
+                        <span class="badge badge-pill supplier-badge-custom mr-1">Existing NDA</span>
                     </div>
                     <div class="col-12 supplier-description-font mb-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur eu mi elementum vestibulum.
-                        Proin luctus pulvinar sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        {{supplier.supplierDescription}}
                     </div>
                 </div>
             </div>
@@ -72,10 +70,7 @@
                         Categories
                     </div>
                     <div class="col-12 supplier-categories-content-font">
-                        <span class="badge badge-pill category-badge-custom mr-1 mt-1">Low-Voltage</span>
-                        <span class="badge badge-pill category-badge-custom mr-1 mt-1">Li-ion batteries</span>
-                        <span class="badge badge-pill category-badge-custom mr-1 mt-1">Smart controllers</span>
-                        <span class="badge badge-pill category-badge-custom mr-1 mt-1">Batteries</span>
+                        <span class="badge badge-pill category-badge-custom mr-1 mt-1" *ngFor="let supplierCategories of supplier.supplierCategories">{{supplierCategories}}</span>
                     </div>
                 </div>
             </div>
