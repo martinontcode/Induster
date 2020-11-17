@@ -40,16 +40,17 @@
     border-color: #3f51b5;
 }
 .search-badge-custom {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.625em;
-    background-color: #3185FC;
+    background-color: #3F51B5;
     color: #fff;
     line-height: 2;
+    /* padding-left: 12px; */
+    padding: 2px 12px 2px 12px;
 }
 .search-badge-custom:hover {
-    font-weight: 600;
     font-size: 0.625em;
-    background-color: #296fd1;
+    background-color: #4f64e0;
     color: #fff;
     line-height: 2;
 }
@@ -57,39 +58,40 @@
 
 /* Supplier information */
 .supplier-header-font {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.125em;
 }
 .supplier-badge-custom {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 0.625em;
-    background-color: #E71D36;
+    background-color: #2889DF;
     color: #fff;
     line-height: 1.6;
+    padding: 3px 8px 3px 8px;
 }
 .supplier-description-font {
     font-weight: 400;
-    font-size: 0.5625em;
-    color: #00101175;
+    font-size: 0.625em;
+    color: #00101180;
 }
 .supplier-categories-header-font {
     font-weight: 400;
     font-size: 0.875em;
-    color: #00101160;
+    color: #00101180;
 }
 
 /* Supplier categories information */
 .category-badge-custom {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.625em;
-    background-color: #3185FC;
+    background-color: #3F51B5;
     color: #fff;
     line-height: 2;
+    padding: 2px 12px 2px 12px;
 }
 .category-badge-custom:hover {
-    font-weight: 600;
     font-size: 0.625em;
-    background-color: #296fd1;
+    background-color: #4f64e0;
     color: #fff;
     line-height: 2;
     transition: 0.3s;
