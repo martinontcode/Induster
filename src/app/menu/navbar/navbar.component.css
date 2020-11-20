@@ -3,17 +3,14 @@
 /* Navbar styles */
 .navbar-brand-font {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.375em;
-    letter-spacing: 0.12em;
-}
-.navbar-nav-font {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1em;
+    letter-spacing: 0.06em;
+    color: #1B262C;
 }
 .navbar-nav-font .nav-link-font {
     font-weight: 500;
-    color: white;
+    color: #1B262C;
 }
 .navbar-nav-font .nav-link-dfont {
     font-weight: 300;
@@ -22,8 +19,24 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 450;
     font-size: 1em;
-    color: white;
+    color: #1B262C;
 }
 .navbar-bg-custom {
-    background-color: #001011 !important;
+    background-color: #FBFBFD !important;
+}
+.navbar-username-font {
+    font-weight: 500;
+    font-size: 0.75em;
+    color: #1B262C;
+}
+.navbar-company-font {
+    font-size: 0.625em;
+    color: #1B262C 50%;
+    opacity: 0.5;
+}
+.avatar {
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
 }
