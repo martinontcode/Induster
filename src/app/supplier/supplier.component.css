@@ -1,9 +1,85 @@
-/* Component level changes */
-.form-control {
-    -webkit-border-radius: 10rem;
-       -moz-border-radius: 10rem;
-            border-radius: 10rem;
+/* Search */
+.search-wrapper {
+    background-color: #FBFBFD !important;
+    box-shadow:0 0px 4px 0 rgba(0,0,0,0.1),0 0px 10px 0 rgba(0,0,0,0.1) !important;
+    border-radius: 4px;
 }
+.search-title {
+    color: #AFB3B5;
+    font-size: 0.8125em;
+}
+.search-input {
+    border-radius: 4px;
+}
+.search-input::placeholder {
+    color: #1B262C;
+    opacity: 0.35;
+    font-weight: 700;
+    font-size: 12px;
+}
+.search-keyword-title {
+    color: #AFB3B5;
+    font-size: 0.8125em;
+}
+.mycustom .input-group-prepend {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    bottom: 6px;
+    border-radius: 4px;
+    z-index:9;
+    background-color: #2889DF;
+}
+.mycustom .input-group-prepend:hover {
+    background-color: #0F4C75;
+}
+.search-button:hover {
+    background-color: #0F4C75;
+}
+
+/* Filter */
+.filter-wrapper {
+    background-color: #FBFBFD !important;
+    box-shadow:0 0px 4px 0 rgba(0,0,0,0.1),0 0px 10px 0 rgba(0,0,0,0.1) !important;
+    border-radius: 4px;
+}
+.filter-title {
+    color: #AFB3B5;
+    font-size: 0.8125em;
+}
+.filter-input {
+    border-radius: 4px;
+    color: #1B262C;
+    opacity: 0.35;
+    font-weight: 700;
+    font-size: 12px;
+}
+.filter-btn {
+    background-color: #2889DF !important;
+    color: #FBFBFD !important;
+}
+.filter-btn:hover {
+    background-color: #0F4C75 !important;
+}
+
+/* Keywords */
+.keyword-badge {
+    border-radius: 6px;
+    background-color: #2889DF;
+}
+.keyword-badge:hover {
+    border-radius: 6px;
+    background-color: #0F4C75;
+    cursor: pointer;
+}
+.keyword-text {
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 0.625rem !important;
+    font-weight: 600;
+}
+
+/* Component level changes */
+
 .supplier-custom-font {
     font-weight: 400;
     font-size: 0.875em;
@@ -95,4 +171,83 @@
     color: #fff;
     line-height: 2;
     transition: 0.3s;
+}
+
+/* Supplier result */
+.supplier-result-wrapper {
+    background-color: #FBFBFD !important;
+    box-shadow:0 0px 4px 0 rgba(0,0,0,0.1),0 0px 10px 0 rgba(0,0,0,0.1) !important;
+    border-radius: 4px;
+}
+.supplier-result-title {
+    color: #AFB3B5;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+/* Supplier */
+.supplier-wrapper {
+    background-color: #FFF !important;
+    box-shadow:0 0px 4px 0 rgba(0,0,0,0.1),0 0px 10px 0 rgba(0,0,0,0.1) !important;
+    border-radius: 4px;
+}
+.supplier-title {
+    color: #AFB3B5;
+    font-size: 0.8125em;
+}
+.supplier-company {
+    color: #1B262C;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.supplier-badge {
+    border-radius: 6px;
+    background-color: #E3F3E9;
+}
+.supplier-badge:hover {
+    border-radius: 6px;
+    background-color: #4EB673;
+    color: #fff;
+    transition: 0.3s;
+}
+.supplier-text {
+    font-size: 0.5rem;
+    color: #4EB673;
+}
+.supplier-information-text {
+    color: #AFB3B5;
+    font-size: 0.8125em;
+}
+.supplier-information-value {
+    color: #1B262C;
+    font-size: 0.8125em;
+}
+
+/* Categories */
+.categories-title {
+    color: #AFB3B5;
+    font-size: 0.8125em;
+}
+.categories-badge {
+    border-radius: 6px;
+    background-color: #2889DF;
+}
+.categories-badge:hover {
+    border-radius: 6px;
+    background-color: #0F4C75;
+    cursor: pointer;
+}
+.categories-text {
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 0.625rem !important;
+    font-weight: 600;
+}
+.categories-hit {
+    background-color: #215ACE;
+}
+.supplier-detail-btn {
+    background-color: #215ACE;
+}
+.supplier-contact-btn {
+    background-color: #215ACE;
 }
