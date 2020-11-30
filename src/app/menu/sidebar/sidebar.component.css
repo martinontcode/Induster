@@ -56,6 +56,16 @@
     color:#1B262C;
   }
 
+  .sidebar .nav-link:hover {
+    color: #3185FC;
+    transition: 0.3s;
+  }
+
+  .sidebar .nav-link.active:hover {
+    color:#3185FC;
+    transition: 0.3s;
+  }
+
   .sidebar .nav-link:hover .feather,
   .sidebar .nav-link.active .feather {
     color: inherit;
