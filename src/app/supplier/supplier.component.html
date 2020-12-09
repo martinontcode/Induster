@@ -1,153 +1,153 @@
-<div class="row ml-sm-1 mr-sm-1 mt-2">
-    <div class="col-12 col-lg-7 mt-3">
-        <div class="col search-wrapper">
-            <div class="container pt-3 pb-4 accordion"  id="accordionExample2">
-                <div class="search-title d-flex">
-                    <span class="">Search</span>
-                    <span class="ml-auto">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </span>
-                </div>
-                <div class="collapse show" id="collapseTwo" aria-labelledby="headingOne" data-parent="#accordionExample2">
-                    <div class="pt-2">
-                        <div class="input-group mycustom">
-                            <input type="text" class="form-control form-control search-input shadow-sm" id="searchKeywords" aria-describedby="Enter keywords" placeholder="Type in keyword to Search...">
+<div class="container-fluid mt-3 mt-xl-4">
+    <div class="row justify-content-between">
+        <div class="col-12 col-lg-7">
+            <!-- Start of search-wrapper -->
+            <div class="container search-wrapper accordion pt-3 pb-3" id="search-accordion">
+                <div class="container">
+                    <div class="search-title d-flex" id="search-title">
+                        <span class="">Search</span>
+                        <span class="ml-auto">
+                            <!-- Search content collapse -->
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" type="button" data-toggle="collapse" data-target="#search-content" aria-expanded="true" aria-controls="collapse-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="search-content collapse show mt-2" id="search-content" aria-labelledby="search-content" data-parent="#search-accordion">
+                        <!-- Keyword search input -->
+                        <div class="input-group search-box">
+                            <input type="text" class="form-control search-input shadow-sm" id="search-keywords" aria-describedby="Enter keywords" placeholder="Type in keyword to Search...">
                             <div class="input-group-prepend">
-                                <button type="submit" value="submit" class="btn btn-primary btn-sm rounded search-button" id="inputGroupPrepend2">
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search ml-1 mr-1 font-weight-bold" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                    </svg>
+                                <button type="submit" value="submit" class="btn btn-primary btn-sm rounded search-button custom-keyword-add-button" id="searchInputGroup">
+                                    Add
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    <!-- Search keywords -->
-                    <div class="pt-2 search-keyword-title row">
-                        <div class="col-12">
-                            Current keywords:
-                        </div>
-                        <div class="col-12">
-                            <span class="badge badge-primary pt-2 pb-2 pl-2 pr-2 keyword-badge keyword-text mr-2 mt-1">Li-ion
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                </svg>
-                            </span>
-                            <span class="badge badge-primary pt-2 pb-2 pl-2 pr-2 keyword-badge keyword-text">Battery
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                </svg>
-                            </span>
+                        <!-- Current keyword area -->
+                        <div class="search-keyword-title row mt-2">
+                            <div class="col-12">
+                                Current keywords:
+                            </div>
+                            <div class="col-12">
+                                <span class="badge badge-primary keyword-badge keyword-text pt-2 pb-2 pl-2 pr-2 mt-1 mr-1">Li-ion
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </span>
+                                <span class="badge badge-primary keyword-badge keyword-text pt-2 pb-2 pl-2 pr-2">Battery
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-12 col-lg-5 d-flex justify-content-end mt-3">
-        <div class="col filter-wrapper">
-            <div class="container pt-3 pb-3 accordion align-items-center" id="accordionExample">
-                <div class="filter-title d-flex">
-                    <span class="">Filters</span>
-                    <span class="ml-auto">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col-12 collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="pt-2 pt-lg-3 row justify-content-between">
-                            <select class="form-control col-12 col-sm-4 mt-1 shadow-sm filter-input">
+        <!-- End of search-wrapper -->
+        <!-- Start of filter-wrapper -->
+        <div class="col-12 col-lg-5 mt-3 mt-lg-0">
+            <div class="container filter-wrapper accordion pt-3 pb-3" id="filter-accordion">
+                <div class="container">
+                    <div class="filter-title d-flex" id="filter-title">
+                        <span class="">Filters</span>
+                        <span class="ml-auto">
+                            <!-- Filter content collapse -->
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" type="button" data-toggle="collapse" data-target="#filter-content" aria-expanded="true" aria-controls="collapse-filter" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <!-- Filter content -->
+                    <div class="col-12 filter-content collapse show pt-2" id="filter-content" aria-labelledby="filter-content" data-parent="#filter-accordion">
+                        <div class="row justify-content-between mb-1">
+                            <select class="form-control col-12 col-sm-4 col-lg-3 mt-1 shadow-sm filter-input">
                                 <option selected>Country</option>
                             </select>
-                            <select class="form-control col-12 col-sm-4  mt-1 shadow-sm filter-input">
+                            <select class="form-control col-12 col-sm-4 col-xl-3 mt-1 shadow-sm filter-input">
                                 <option selected>Industry</option>
                             </select>
-                            <select class="form-control col-12 col-sm-4  mt-1 shadow-sm filter-input">
+                            <select class="form-control col-12 col-sm-4 col-xl-4 mt-1 shadow-sm filter-input">
                                 <option selected>Certificates</option>
                             </select>
-                    </div>
-                    <div class="row">
-                        <button type="button" class="btn btn-sm btn-primary filter-btn mt-3 ml-0 pl-5 pr-5 mb-0">Filter</button>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="button" class="btn btn-sm btn-primary filter-btn mt-3 mb-2 ml-0 pl-5 pr-5">Filter</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-12 mt-4">
-        <div class="col supplier-result-wrapper">
-            <div class="ml-3 mr-3 pt-2 pb-2 supplier-result-title border-bottom">Suppliers</div>
-            <div class="pt-3 pb-4 ml-sm-3 mr-sm-3">
-                <div class="supplier-wrapper">
-                    <div class="ml-1 mr-1 ml-sm-3 mr-sm-3 pt-3 pb-3 row">
-                        <div class="col-12 col-lg-4 border-right-custom border-bottom-custom">
-                            <div class="row">
-                                <!-- Company title label -->
-                                <div class="supplier-title col-12">Company</div>
-                                <!-- Company information row -->
-                                <div class="supplier-company col-12 col-sm-5 d-flex align-items-center">Siemens OY</div>
-                                <div class="supplier-company col-4 col-md-3 d-flex align-items-center mr-1 mr-sm-2">
-                                    <span class="badge badge-success pt-2 pb-2 pl-1 pr-1 pl-sm-2 pr-sm-2 supplier-badge supplier-text ml-sm-2">Recommended</span>
-                                </div>
-                                <div class="supplier-company col-4 col-md-3 d-flex align-items-center">
-                                    <span class="badge badge-success pt-2 pb-2 pl-1 pr-1 pl-2 pr-2 supplier-badge supplier-text ml-sm-2">Existing NDA</span>
-                                </div>
-                                <!-- Company extra information row -->
-                                <div class="col-12 mt-2 row">
-                                    <div class="col-12 col-sm-4 mb-1 supplier-information-text">Country: <span class="supplier-information-value ml-sm-1">Estonia</span></div>
-                                    <div class="col-12 col-sm-5 mb-1 supplier-information-text">Industry: <span class="supplier-information-value ml-sm-1">Electronics</span></div>
-                                    <div class="col-12 col-sm-3 mb-1 supplier-information-text">
-                                        <div class="dropdown">
-                                            <span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Certificates
-                                            </span>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Cert. X01</a>
-                                            <a class="dropdown-item" href="#">Cert. X02</a>
-                                            <a class="dropdown-item" href="#">Cert. X03</a>
-                                            </div>
+        <!-- End of filter-wrapper -->
+        <!-- Start of supplier-wrapper -->
+        <div class="col-12 mt-3 mt-lg-4">
+            <div class="container-fluid supplier-result-wrapper pt-3 pb-3" id="supplier-wrapper">
+                <div class="ml-3 mr-3 mb-3 supplier-result-title border-bottom">Suppliers</div>
+                <div class="row supplier-wrapper pt-3 pb-4 ml-sm-3 mr-sm-3">
+                    <!-- Company block -->
+                    <div class="col-12 col-lg-4 border-right-custom border-bottom-custom mt-md-1">
+                        <div class="row">
+                            <!-- Company title label -->
+                            <div class="supplier-title col-12">Company</div>
+                            <!-- Company information row -->
+                            <div class="supplier-company col-12 col-sm-5 col-lg-12 d-flex align-items-center">Siemens OY</div>
+                            <div class="d-flex align-items-center col-4 col-md-3 mt-1">
+                                <span class="badge badge-success supplier-badge supplier-text pt-2 pb-2 pl-1 pr-1 pl-sm-2 pr-sm-2 ml-sm-2 ml-lg-0 mr-2">Recommended</span>
+                                <span class="badge badge-success supplier-badge supplier-text pt-2 pb-2 pl-1 pr-1 pl-sm-2 pr-sm-2 ml-sm-2 ml-lg-0">Existing NDA</span>
+                            </div>
+                            <!-- Company extra information row -->
+                            <div class="col-12 row mt-2 mb-1 mb-md-2">
+                                <div class="col-12 col-sm-4 col-lg-3 mr-lg-2 supplier-information-text">Country: <span class="supplier-information-value ml-sm-1 ml-lg-0">Estonia</span></div>
+                                <div class="col-12 col-sm-5 col-lg-3 mr-lg-2 supplier-information-text">Industry: <span class="supplier-information-value ml-sm-1 ml-lg-0">Electronics</span></div>
+                                <div class="col-12 col-sm-3 col-lg-3 supplier-information-text">
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Certificates
+                                        </span>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Cert. X01</a>
+                                        <a class="dropdown-item" href="#">Cert. X02</a>
+                                        <a class="dropdown-item" href="#">Cert. X03</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 border-right-custom border-bottom-custom">
-                            <div class="row mb-2">
-                                    <!-- Categories title label -->
-                                    <div class="col-12 mt-1 categories-title">Categories</div>
-                                    <div class="col-12 mt-1">
-                                        <span class="badge badge-primary pt-2 pb-2 pl-4 pr-4 categories-badge categories-text categories-hit mr-1">
-                                            Li-ion
-                                        </span>
-                                        <span class="badge badge-primary pt-2 pb-2 pl-4 pr-4 categories-badge categories-text categories-hit mr-1">
-                                            Battery
-                                        </span>
-                                        <span class="badge badge-primary pt-2 pb-2 pl-4 pr-4 categories-badge categories-text mr-1">
-                                            Low-Voltage
-                                        </span>
-                                    </div>
-                                    <div class="col-12">
-                                        <span class="badge badge-primary pt-2 pb-2 pl-5 pr-5 categories-badge categories-text mr-1">
-                                            Smart Controllers
-                                        </span>
-                                    </div>
+                    </div>
+                    <!-- Categories block -->
+                    <div class="col-12 col-lg-6 border-right-custom border-bottom-custom mt-1 mt-md-1">
+                        <div class="row mb-1 mb-md-2">
+                            <!-- Categories title label -->
+                            <div class="col-12 categories-title">Categories</div>
+                            <div class="col-12 mt-1">
+                                <span class="badge badge-primary pt-2 pb-2 pl-4 pr-4 categories-badge categories-text categories-hit mr-1">
+                                    Li-ion
+                                </span>
+                                <span class="badge badge-primary pt-2 pb-2 pl-4 pr-4 categories-badge categories-text categories-hit mr-1">
+                                    Battery
+                                </span>
+                                <span class="badge badge-primary pt-2 pb-2 pl-4 pr-4 categories-badge categories-text mr-1">
+                                    Low-Voltage
+                                </span>
+                            </div>
+                            <div class="col-12">
+                                <span class="badge badge-primary pt-2 pb-2 pl-5 pr-5 categories-badge categories-text mr-1">
+                                    Smart Controllers
+                                </span>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-2 ml-sm-auto mt-1">
-                            <div class="row">
-                                <div class="col-6 col-lg-12 mt-2">
-                                    <button type="button" class="btn btn-sm btn-primary supplier-detail-btn btn-block">Details</button>
-                                </div>
-                                <div class="col-6 col-lg-12 mt-2">
-                                    <button type="button" class="btn btn-sm btn-primary supplier-contact-btn btn-block">Contact</button>
-                                </div>
-                            </div>
+                    </div>
+                    <!-- Buttons block -->
+                    <div class="col-12 col-lg-2 border-bottom-custom mt-1 mt-md-1 d-flex justify-content-around align-items-center">
+                        <div class="mb-2">
+                            <button type="button" class="btn btn-sm col-12 btn-primary supplier-detail-btn mb-3">Details</button>
+                            <button type="button" class="btn btn-sm col-12 btn-primary supplier-contact-btn">Contact</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End of supplier-wrapper -->
     </div>
 </div>

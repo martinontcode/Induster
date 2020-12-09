@@ -1,3 +1,23 @@
+/* Component level changes */
+.supplier-custom-font {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #0010119f;
+}
+.supplier-custom-link-font {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #001011a2;
+    text-decoration: none;
+}
+.supplier-custom-link-font:hover {
+    font-weight: 400;
+    font-size: 0.875em;
+    color: #3f51b5;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
 /* Search */
 .search-wrapper {
     background-color: #FBFBFD !important;
@@ -21,21 +41,24 @@
     color: #AFB3B5;
     font-size: 0.8125em;
 }
-.mycustom .input-group-prepend {
+.search-box .input-group-prepend {
     position: absolute;
-    right: 2px;
-    top: 2px;
-    bottom: 2px;
-    right: 2px;
-    border-radius: 4px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
     z-index:9;
-    background-color: #2889DF;
 }
-.mycustom .input-group-prepend:hover {
+.search-box .input-group-prepend:hover {
     background-color: #0F4C75;
 }
 .search-button:hover {
     background-color: #0F4C75;
+}
+.custom-keyword-add-button{
+    background-color: #2889DF !important;
+}
+.custom-keyword-add-button{
+    background-color: #2889DF !important;
 }
 
 /* Filter */
@@ -78,60 +101,6 @@
     font-size: 0.625rem !important;
     font-weight: 600;
 }
-
-/* Component level changes */
-
-.supplier-custom-font {
-    font-weight: 400;
-    font-size: 0.875em;
-    color: #0010119f;
-}
-.supplier-custom-link-font {
-    font-weight: 400;
-    font-size: 0.875em;
-    color: #001011a2;
-    text-decoration: none;
-}
-.supplier-custom-link-font:hover {
-    font-weight: 400;
-    font-size: 0.875em;
-    color: #3f51b5;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-/* Supplier search */
-.supplier-search-wrapper {
-    background-color: white;
-}
-.search-btn-outline-custom {
-    color: #3f51b59f;
-    border-color: #3f51b59f;
-    -webkit-border-radius: 10rem;
-       -moz-border-radius: 10rem;
-            border-radius: 10rem;
-}
-.search-btn-outline-custom:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #3f51b5;
-    border-color: #3f51b5;
-}
-.search-badge-custom {
-    font-weight: 500;
-    font-size: 0.625em;
-    background-color: #3F51B5;
-    color: #fff;
-    line-height: 2;
-    /* padding-left: 12px; */
-    padding: 2px 12px 2px 12px;
-}
-.search-badge-custom:hover {
-    font-size: 0.625em;
-    background-color: #4f64e0;
-    color: #fff;
-    line-height: 2;
-}
-
 
 /* Supplier information */
 .supplier-header-font {
@@ -256,13 +225,13 @@
 /* Responsive design */
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 320px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
     .border-bottom-custom {
         border-bottom: 1px solid #dee2e6;
     }
 }
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width : 480px) and (max-width : 768px) {
     .border-bottom-custom {
         border-bottom: 1px solid #dee2e6;
     }
@@ -274,7 +243,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+    .border-right-custom {
+        border-right: 1px solid #dee2e6;
+    }
 }
 
 /* Large Devices, Wide Screens */
